@@ -3,6 +3,9 @@
 ## Nombre:
 José Luis Medina Ramírez
 
+## Grupo:
+B
+
 ## Materia:
 Graficación
 
