@@ -1,7 +1,7 @@
 # Segmentación de Frutas usando Máscara HSV
 
 ## Nombre:
-(Escribe tu nombre completo aquí)
+José Luis Medina Ramírez
 
 ## Materia:
 Graficación
