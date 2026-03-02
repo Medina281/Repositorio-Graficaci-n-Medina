@@ -1,0 +1,35 @@
+import numpy as np
+import cv2
+
+width, height = 1000, 1000
+img = np.ones((height, width, 3), dtype=np.uint8) * 255
+center_x, center_y = width // 2, height // 2
+
+theta_increment = 0.01
+theta = 0
+max_theta = 20 * np.pi  # más vueltas para cerrar bien
+
+# Hipotrocoide: rueda dentro
+R = 220
+r = 90
+d = 140
+
+while True:
+    for t in np.arange(0, theta, theta_increment):
+        x = (R - r) * np.cos(t) + d * np.cos(((R - r) / r) * t)
+        y = (R - r) * np.sin(t) - d * np.sin(((R - r) / r) * t)
+        X = int(center_x + x)
+        Y = int(center_y + y)
+        cv2.circle(img, (X, Y), 2, (0, 0, 0), -1)
+
+    cv2.imshow("Hypotrochoid", img)
+    theta += theta_increment
+
+    if theta >= max_theta:
+        theta = 0
+        img[:] = 255
+
+    if cv2.waitKey(30) & 0xFF == 27:
+        break
+
+cv2.destroyAllWindows()
