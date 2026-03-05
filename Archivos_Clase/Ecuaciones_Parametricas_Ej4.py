@@ -26,7 +26,7 @@ while True:
     theta += theta_increment
 
     if theta >= max_theta:
-        theta = 0
+        theta = 0   
         img[:] = 255
 
     if cv2.waitKey(30) & 0xFF == 27:
