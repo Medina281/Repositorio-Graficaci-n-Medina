@@ -6,8 +6,8 @@
 
 | | |
 |---|---|
-| **Nombre completo** | [Nombre] |
-| **Grupo** | [Grupo] |
+| **Nombre completo** | José Luis Medina Ramírez |
+| **Grupo** | B |
 | **Materia** | Graficación |
 | **Proyecto** | Demo Procedural con OpenCV |
 | **Fecha** | Mayo 2026 |
